@@ -33,8 +33,7 @@ module MainActivity =
         //Subscribe to it
         let eventBind = sm.RegisterListener(x, pressure, SensorDelay.Normal)                                                  
                
-        // Get our button from the layout resource,
-        // and attach an event to it
+        // find the main label and assign it
         mainLabel := x.FindViewById<TextView>(Resource_Id.mainLabel)
         
     interface ISensorEventListener with
